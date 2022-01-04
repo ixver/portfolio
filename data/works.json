@@ -7,8 +7,8 @@
 			"title": "Webcam Canvas Drawing Tool with Hand Detections",
 			"description": "Uses 5 hand configurations, to draw, move position, configure the brush size, configure the brush color, or erase on a canvas.",
 			"pageurl": "",
-			"sourceurl": "https://github.com/o1123pq/",
-			"videoUrl": "https://youtu.be/EPSyEdOLbpE",
+			"sourceurl": "https://github.com/o1123pq/code_snippets/blob/main/backend_ml_detects_hands.py",
+			"videoUrl": "https://www.youtube.com/watch?v=EPSyEdOLbpE",
 			"imgs": [],
 			"tech": ["python", "opencv", "tensorflow", "mediapipe"]
 		},
@@ -16,7 +16,7 @@
 			"title": "Webcam 3D Object Detection with Objectron",
 			"description": "he model does not detect the shoe when viewed straight on, or cups when upside down. It looks like object position/orientation does affect detection. And detections in the webcam are much more consistent. Surprisingly, the slipper was detected, under the shoe class.",
 			"pageurl": "",
-			"sourceurl": "https://github.com/o1123pq/",
+			"sourceurl": "https://github.com/o1123pq/code_snippets/blob/main/backend_ml_detects_objects3d.py",
 			"videoUrl": "",
 			"imgs": [],
 			"tech": ["python", "opencv", "tensorflow", "mediapipe"]
@@ -25,8 +25,8 @@
 			"title": "Video 3D Object Detection Test with Objectron (for cups, chairs, shoes, cameras)",
 			"description": "Not all objects in the scene were detected, but some successful ones were there.",
 			"pageurl": "",
-			"sourceurl": "https://github.com/o1123pq/",
-			"videoUrl": "https://youtu.be/AAKrcxfZMxI",
+			"sourceurl": "https://github.com/o1123pq/code_snippets/blob/main/backend_ml_detects_objects3d.py",
+			"videoUrl": "https://www.youtube.com/watch?v=AAKrcxfZMxI",
 			"imgs": [],
 			"tech": ["python", "opencv", "tensorflow", "mediapipe"]
 		},
@@ -34,8 +34,8 @@
 			"title": "Video 3D Object Detection Fail with Objectron (for cups, chairs)",
 			"description": "Objectron model attempts to identify ambiguous areas where cups are upside down and chairs are only partially visible. Even with a low minimum confidence setting, the position and scene lighting might be an overbearing factor for detection in this case.",
 			"pageurl": "",
-			"sourceurl": "https://github.com/o1123pq/",
-			"videoUrl": "https://youtu.be/5h1sbNn_ZBk",
+			"sourceurl": "https://github.com/o1123pq/code_snippets/blob/main/backend_ml_detects_objects3d.py",
+			"videoUrl": "https://www.youtube.com/watch?v=5h1sbNn_ZBk",
 			"imgs": [],
 			"tech": ["python", "opencv", "tensorflow", "mediapipe"]
 		},
@@ -52,7 +52,7 @@
 			"title": "Object Detection with custom Cookie Monster model",
 			"description": "Trained a Cookie Monster model (with ~100 images) on a freemium Google Cloud account. There were no detections on Sesame Street videos but there were detections on some test images (with erratic confidence).<br/><br/>It makes sense as more than half of the images labeled were of TOYS; which hadn't occurred to me before since the Cookie Monster is also somewhat a toy. However&#44; with this understanding (and since this would take a bunch of more hours&#44; to label images from the actual videos)&#44; I will call it a day and say this was a success.<br/><br/>Inputs matter. And we need more images of the Cookie Monster.",
 			"pageurl": "",
-			"sourceurl": "",
+			"sourceurl": "https://github.com/o1123pq/code_snippets/blob/main/backend_ml_detects_objects.py",
 			"videoUrl": "",
 			"imgs": ["./cm (1).jpg", "./cm (2).jpg", "./cm (1).png", "./cm (2).png", "./cm (3).png", "./cm (4).png", "./cm (5).png"],
 			"tech": ["python", "tensorflow", "opencv", "darknet framework, yolov3", "chrome extensions"]
@@ -61,7 +61,7 @@
 			"title": "Object Detection with imported models",
 			"description": "Out of curiosity, applied custom helmet, motorcycle models again",
 			"pageurl": "",
-			"sourceurl": "",
+			"sourceurl": "https://github.com/o1123pq/code_snippets/blob/main/backend_ml_detects_objects.py",
 			"videoUrl": "https://www.youtube.com/watch?v=AgZm7g3a62s",
 			"imgs": [],
 			"tech": ["python", "tensorflow", "opencv", "darknet framework, yolov3"]
@@ -70,7 +70,7 @@
 			"title": "Object Detection with imported models",
 			"description": "Applied custom helmet, motorcycle models (from ~700 images) created by user Savan Agrawal on Kaggle.",
 			"pageurl": "",
-			"sourceurl": "",
+			"sourceurl": "https://github.com/o1123pq/code_snippets/blob/main/backend_ml_detects_objects.py",
 			"videoUrl": "https://www.youtube.com/watch?v=3KUfnZ9eNEY",
 			"imgs": [],
 			"tech": ["python", "tensorflow", "opencv", "darknet framework, yolov3"]
@@ -79,7 +79,7 @@
 			"title": "Object Detection with imported COCO models",
 			"description": "Applied COCO models again to real life scene.",
 			"pageurl": "",
-			"sourceurl": "",
+			"sourceurl": "https://github.com/o1123pq/code_snippets/blob/main/backend_ml_detects_objects.py",
 			"videoUrl": "https://www.youtube.com/watch?v=8dfD9zJH0Zo",
 			"imgs": [],
 			"tech": ["python", "tensorflow", "opencv", "darknet framework, yolov3"]
@@ -95,7 +95,7 @@
 		},
 
 		{
-			"title": "News Scraper",
+			"title": "News Scraping",
 			"description": "A mockup service that scrapes news articles for a search topic",
 			"pageurl": "https://www.github.com/",
 			"sourceurl": "https://www.github.com/",
@@ -104,7 +104,7 @@
 			"tech": ["nodejs", "reactjs", "nextjs", "firebase", "puppeteer", "docker", "googlecloudrun"]
 		},
 		{
-			"title": "[code snippet] Extracting NLP data classes",
+			"title": "[code snippet] Extracting NLP data classes for use",
 			"description": "",
 			"pageurl": "https://www.github.com/o1123pq/codesnippets/blob/main/backend_requests_spacy.py",
 			"sourceurl": "https://www.github.com/o1123pq/codesnippets/blob/main/backend_requests_spacy.py",
@@ -113,13 +113,22 @@
 			"tech": ["python", "numpy", "pandas", "spacy"]
 		},
 		{
-			"title": "[code snippet] Plotting pre-processed data",
+			"title": "[code snippet] Pre-processing data for Matplotlib Visualization",
 			"description": "Data is preprocessed before plotting.",
 			"pageurl": "https://www.github.com/o1123pq/codesnippets/blob/main/backend_ml_plots.py",
 			"sourceurl": "https://www.github.com/o1123pq/codesnippets/blob/main/backend_ml_plots.py",
 			"videoUrl": "",
 			"imgs": ["sc (1).jpg"],
 			"tech": ["python", "numpy", "pandas", "matplotlib"]
+		},
+		{
+			"title": "[code snippet] Training ML weights",
+			"description": "",
+			"pageurl": "https://www.github.com/o1123pq/codesnippets/blob/main/backend_ml_weights.py",
+			"sourceurl": "https://www.github.com/o1123pq/codesnippets/blob/main/backend_ml_weights.py",
+			"videoUrl": "",
+			"imgs": ["sc (1).jpg"],
+			"tech": ["python", "numpy", "pandas"]
 		},
 		{
 			"title": "[code snippet] Scraping Data with Selenium",
@@ -150,13 +159,3 @@
 		}
 	]
 }
-
-// {
-// 	"title": "[code snippet] Training ML weights",
-// 	"description": "",
-// 	"pageurl": "https://www.github.com/o1123pq/codesnippets/blob/main/backend_ml_weights.py",
-// 	"sourceurl": "https://www.github.com/o1123pq/codesnippets/blob/main/backend_ml_weights.py",
-// 	"videoUrl": "",
-// 	"imgs": ["sc (1).jpg"],
-// 	"tech": ["python", "numpy", "pandas"]
-// },

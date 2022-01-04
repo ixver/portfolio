@@ -19,6 +19,7 @@ const WorksSection = () => {
 	let workDataTotalRef = useRef();
 	const [listdatacurrent, setlistdatacurrent] = useState(worksData);
 	const [workDataTotal, setWorkDataTotal] = useState(worksData.length);
+	const [currentTag, setCurrentTag] = useState("");
 	const tagChoices = [];
 	worksData.map(function (vals, index) {
 		vals.tech &&
@@ -30,8 +31,9 @@ const WorksSection = () => {
 
 	useEffect(() => {});
 
-	const titleChoices = ["detection", "scraping", "nlp", "code snippet", "plotting"];
+	const titleChoices = ["detection", "scraping", "nlp", "code snippet", "visualization"];
 	const handleFilterReset = () => {
+		setCurrentTag("");
 		setlistdatacurrent(worksData);
 		setWorkDataTotal(worksData.length);
 	};
@@ -41,6 +43,7 @@ const WorksSection = () => {
 		});
 		setlistdatacurrent(newtitleddaata);
 		setWorkDataTotal(newtitleddaata.length);
+		setCurrentTag(e.target.value);
 	};
 	const handleFilterByTags = (e) => {
 		const newtaggeddata = worksData.filter(function (vals, index) {
@@ -48,6 +51,7 @@ const WorksSection = () => {
 		});
 		setlistdatacurrent(newtaggeddata);
 		setWorkDataTotal(newtaggeddata.length);
+		setCurrentTag(e.target.value);
 	};
 
 	const outerAnimContainer0 = {
@@ -198,7 +202,8 @@ const WorksSection = () => {
 												px=".4rem"
 												mx=".08rem"
 												my=".33rem"
-												color={modeTagClr}
+												bg={currentTag == v ? modeTagHoveredBgClr : "rgba(0,0,0,0)"}
+												color={currentTag == v ? "white" : modeTagClr}
 												borderColor={modeTagClr}
 												borderWidth=".08rem"
 												value={v}
@@ -246,7 +251,8 @@ const WorksSection = () => {
 												px=".4rem"
 												mx=".08rem"
 												my=".33rem"
-												color={modeTagClr}
+												bg={currentTag == v ? modeTagHoveredBgClr : "rgba(0,0,0,0)"}
+												color={currentTag == v ? "white" : modeTagClr}
 												borderColor={modeTagClr}
 												borderWidth=".08rem"
 												value={v}
