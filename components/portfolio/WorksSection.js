@@ -111,6 +111,7 @@ const WorksSection = () => {
 	const modeBgColor = useColorModeValue("gray.800", "gray.100");
 	const modeTxtClr = useColorModeValue("white", "black");
 	const modeTagClr = useColorModeValue("gray.400", "gray.600");
+	const modeTagChosenClr = useColorModeValue("white", "black");
 	const modeTagHoveredClr = useColorModeValue("white", "black");
 	const modeTagHoveredBgClr = useColorModeValue("blue.600", "blue.200");
 	return (
@@ -204,8 +205,8 @@ const WorksSection = () => {
 												mx=".4vh"
 												my=".33rem"
 												bg={currentTag == v ? modeTagHoveredBgClr : "rgba(0,0,0,0)"}
-												color={currentTag == v ? "white" : modeTagClr}
-												borderColor={currentTag == v ? "white" : modeTagClr}
+												color={currentTag == v ? modeTagChosenClr : modeTagClr}
+												borderColor={currentTag == v ? modeTagChosenClr : modeTagClr}
 												borderWidth={currentTag == v ? ".28vh" : ".2vh"}
 												value={v}
 												onClick={(e) => {
@@ -253,8 +254,8 @@ const WorksSection = () => {
 												mx=".4vh"
 												my=".33rem"
 												bg={currentTag == v ? modeTagHoveredBgClr : "rgba(0,0,0,0)"}
-												color={currentTag == v ? "white" : modeTagClr}
-												borderColor={currentTag == v ? "white" : modeTagClr}
+												color={currentTag == v ? modeTagChosenClr : modeTagClr}
+												borderColor={currentTag == v ? modeTagChosenClr : modeTagClr}
 												borderWidth={currentTag == v ? ".28vh" : ".2vh"}
 												value={v}
 												onClick={(e) => {

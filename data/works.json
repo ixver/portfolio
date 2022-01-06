@@ -4,8 +4,8 @@
 	"subtext": "For logins, you can use <bold>guest id: xxxx, pw: xxxx</bold>",
 	"data": [
 		{
-			"title": "Canvas Drawing Tool in Webcam with Hand Detections",
-			"description": "5 hand configurations (1) to draw, (2) to move position, (3) configure the brush size, (4) to set the brush RGB colors separately, and (5) to erase",
+			"title": "Canvas Drawing with Hands",
+			"description": "Implemented Mediapipe's hand detection model. 5 hand configurations (1) to draw, (2) to move position, (3) configure the brush size, (4) to set the brush RGB colors separately, and (5) to erase",
 			"pageurl": "",
 			"sourceurl": "https://github.com/o1123pq/code_snippets/blob/main/backend_ml_detects_hands.py",
 			"videoUrl": "https://www.youtube.com/watch?v=EPSyEdOLbpE",
@@ -13,8 +13,8 @@
 			"tech": ["python", "opencv", "tensorflow", "mediapipe"]
 		},
 		{
-			"title": "Object Detections (3D) in Webcam with Objectron",
-			"description": "The model detects better in certain views than others e.g. shoe side vs. front views, cup upright vs. upside down. It looks like object position/orientation does affect detection. Detections in the webcam are much more consistent. Surprisingly, the slipper was detected, under the shoe class.",
+			"title": "Object Detections (3D) in Webcam",
+			"description": "The objectron model detects better in certain views than others e.g. shoe side vs. front views, cup upright vs. upside down. It looks like object position/orientation does affect detection. Detections in the webcam are much more consistent. Surprisingly, the slipper was detected, under the shoe class.",
 			"pageurl": "",
 			"sourceurl": "https://github.com/o1123pq/code_snippets/blob/main/backend_ml_detects_objects3d.py",
 			"videoUrl": "https://www.youtube.com/watch?v=PGsjsONRJCs",
@@ -22,8 +22,8 @@
 			"tech": ["python", "opencv", "tensorflow", "mediapipe"]
 		},
 		{
-			"title": "Object Detections (3D) Test in Video with Objectron (for cups, chairs, shoes, cameras)",
-			"description": "Not all objects in the scene were detected, but some successful ones were there.",
+			"title": "Object Detections (3D) Test",
+			"description": "Implemented MediaPipe's Objectron model (for cups, chairs, shoes, cameras). Not all objects in the scene were detected, but some successful ones were there.",
 			"pageurl": "",
 			"sourceurl": "https://github.com/o1123pq/code_snippets/blob/main/backend_ml_detects_objects3d.py",
 			"videoUrl": "https://www.youtube.com/watch?v=AAKrcxfZMxI",
@@ -31,8 +31,8 @@
 			"tech": ["python", "opencv", "tensorflow", "mediapipe"]
 		},
 		{
-			"title": "Object Detections (3D) Failed Attempt with Objectron (for cups, chairs)",
-			"description": "Attempts were made to identify ambiguous areas where cups are upside down and chairs are only partially visible. Though the confidence minimum was set low, the position and scene lighting might have been an overbearing factor for any detection here.",
+			"title": "Object Detections (3D) Failed Attempt",
+			"description": "Implemented MediaPipe's Objectron model (for cups, chairs). Attempts were made to identify ambiguous areas where cups are upside down and chairs are only partially visible. Though the confidence minimum was set low, the position and scene lighting might have been an overbearing factor for any detection here.",
 			"pageurl": "",
 			"sourceurl": "https://github.com/o1123pq/code_snippets/blob/main/backend_ml_detects_objects3d.py",
 			"videoUrl": "https://www.youtube.com/watch?v=5h1sbNn_ZBk",
@@ -40,8 +40,8 @@
 			"tech": ["python", "opencv", "tensorflow", "mediapipe"]
 		},
 		{
-			"title": "Face/Hand Detections and Image Manipulations Web App Webcam",
-			"description": "Face and hand detections from pre-boxed tensorflow-mediapipe face, hand and finger models",
+			"title": "Machine Learning Detection for Webcam",
+			"description": "Face, hand, finger detection Tensorflow-MediaPipe models were implemented with image and canvas manipulations.",
 			"pageurl": "https://tfwebapp-nehmhudbya-pd.a.run.app/",
 			"sourceurl": "https://github.com/o1123pq/tfwebapp",
 			"videoUrl": "",
@@ -49,8 +49,8 @@
 			"tech": ["reactjs", "mediapipe", "firebase", "canvas", "tensorflow", "docker", "googlecloudrun"]
 		},
 		{
-			"title": "Object Detection with Custom Cookie Monster Model",
-			"description": "Trained a Cookie Monster model (with ~100 images) on a freemium Google Cloud account. There were no detections on Sesame Street videos but there were detections on some test images (with erratic confidence).<br/><br/>It makes sense as more than half of the images labeled were of TOYS; which hadn't occurred to me before since the Cookie Monster is also somewhat a toy. However&#44; with this understanding (and since this would take a bunch of more hours&#44; to label images from the actual videos)&#44; I will call it a day and say this was a success.<br/><br/>Inputs matter. And we need more images of the Cookie Monster.",
+			"title": "Cookie Monster Object Detection",
+			"description": "Trained a custom Cookie Monster model (with ~100 images) on a freemium Google Colab account. There were no detections on Sesame Street videos but there were detections on some test images (with erratic confidence).<br/><br/>It makes sense as more than half of the images labeled were of TOYS; which hadn't occurred to me before since the Cookie Monster is also somewhat a toy. However&#44; with this understanding (and since this would take a bunch of more hours&#44; to label images from the actual videos)&#44; I will call it a day and say this was a success.<br/><br/>Inputs matter. And we need more images of the Cookie Monster.",
 			"pageurl": "",
 			"sourceurl": "https://github.com/o1123pq/code_snippets/blob/main/backend_ml_detects_objects.py",
 			"videoUrl": "",
@@ -58,8 +58,8 @@
 			"tech": ["python", "tensorflow", "opencv", "darknet framework, yolov3", "chrome extensions"]
 		},
 		{
-			"title": "Object Detection with Imported Models",
-			"description": "Out of curiosity, applied custom helmet, motorcycle models again",
+			"title": "Motorcycle Parade Object Detection",
+			"description": "Applied custom helmet, motorcycle models again",
 			"pageurl": "",
 			"sourceurl": "https://github.com/o1123pq/code_snippets/blob/main/backend_ml_detects_objects.py",
 			"videoUrl": "https://www.youtube.com/watch?v=AgZm7g3a62s",
@@ -67,8 +67,8 @@
 			"tech": ["python", "tensorflow", "opencv", "darknet framework, yolov3"]
 		},
 		{
-			"title": "Object Detection with imported models",
-			"description": "Applied custom helmet, motorcycle models (from ~700 images) created by user Savan Agrawal on Kaggle.",
+			"title": "Olympics Object Detection",
+			"description": "Applied imported custom helmet, motorcycle models (from ~700 images) created by user Savan Agrawal on Kaggle.",
 			"pageurl": "",
 			"sourceurl": "https://github.com/o1123pq/code_snippets/blob/main/backend_ml_detects_objects.py",
 			"videoUrl": "https://www.youtube.com/watch?v=3KUfnZ9eNEY",
@@ -76,8 +76,8 @@
 			"tech": ["python", "tensorflow", "opencv", "darknet framework, yolov3"]
 		},
 		{
-			"title": "Object Detection with imported COCO models",
-			"description": "Applied COCO models again to real life scene.",
+			"title": "Street View Object Detection",
+			"description": "Object Detection with imported COCO models.",
 			"pageurl": "",
 			"sourceurl": "https://github.com/o1123pq/code_snippets/blob/main/backend_ml_detects_objects.py",
 			"videoUrl": "https://www.youtube.com/watch?v=8dfD9zJH0Zo",
@@ -85,8 +85,8 @@
 			"tech": ["python", "tensorflow", "opencv", "darknet framework, yolov3"]
 		},
 		{
-			"title": "Object Detection with imported COCO models",
-			"description": "Applied COCO models to Michael Scott.",
+			"title": "Michael Scott Object Detection",
+			"description": "Object Detection with imported COCO models.",
 			"pageurl": "",
 			"sourceurl": "",
 			"videoUrl": "https://www.youtube.com/watch?v=UVBVUOlQj_U",
@@ -95,7 +95,7 @@
 		},
 
 		{
-			"title": "News Scraper / Scraping Web App",
+			"title": "News Scraping Web App",
 			"description": "A mockup service that scrapes news articles for a search topic",
 			"pageurl": "https://scrv1-swds45lcrq-nn.a.run.app/",
 			"sourceurl": "https://github.com/o1123pq/scraper",
