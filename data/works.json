@@ -106,8 +106,8 @@
 		{
 			"title": "[code snippet] Extracting NLP data classes for use",
 			"description": "",
-			"pageurl": "https://www.github.com/o1123pq/codesnippets/blob/main/backend_requests_spacy.py",
-			"sourceurl": "https://www.github.com/o1123pq/codesnippets/blob/main/backend_requests_spacy.py",
+			"pageurl": "https://www.github.com/o1123pq/code_snippets/blob/main/backend_requests_spacy.py",
+			"sourceurl": "https://www.github.com/o1123pq/code_snippets/blob/main/backend_requests_spacy.py",
 			"videoUrl": "",
 			"imgs": ["sc (1).jpg"],
 			"tech": ["python", "numpy", "pandas", "spacy"]
@@ -115,8 +115,8 @@
 		{
 			"title": "[code snippet] Pre-processing data for Matplotlib Visualization",
 			"description": "Data is preprocessed before plotting.",
-			"pageurl": "https://www.github.com/o1123pq/codesnippets/blob/main/backend_ml_plots.py",
-			"sourceurl": "https://www.github.com/o1123pq/codesnippets/blob/main/backend_ml_plots.py",
+			"pageurl": "https://www.github.com/o1123pq/code_snippets/blob/main/backend_ml_plots.py",
+			"sourceurl": "https://www.github.com/o1123pq/code_snippets/blob/main/backend_ml_plots.py",
 			"videoUrl": "",
 			"imgs": ["sc (1).jpg"],
 			"tech": ["python", "numpy", "pandas", "matplotlib"]
@@ -124,8 +124,8 @@
 		{
 			"title": "[code snippet] Training ML weights",
 			"description": "",
-			"pageurl": "https://www.github.com/o1123pq/codesnippets/blob/main/backend_ml_weights.py",
-			"sourceurl": "https://www.github.com/o1123pq/codesnippets/blob/main/backend_ml_weights.py",
+			"pageurl": "https://www.github.com/o1123pq/code_snippets/blob/main/backend_ml_weights.py",
+			"sourceurl": "https://www.github.com/o1123pq/code_snippets/blob/main/backend_ml_weights.py",
 			"videoUrl": "",
 			"imgs": ["sc (1).jpg"],
 			"tech": ["python", "numpy", "pandas"]
@@ -133,8 +133,8 @@
 		{
 			"title": "[code snippet] Scraping Data with Selenium",
 			"description": "Scraping data from various sources.",
-			"pageurl": "https://www.github.com/o1123pq/codesnippets/blob/main/backend_scrapes_selenium.py",
-			"sourceurl": "https://www.github.com/o1123pq/codesnippets/blob/main/backend_scrapes_selenium.py",
+			"pageurl": "https://www.github.com/o1123pq/code_snippets/blob/main/backend_scrapes_selenium.py",
+			"sourceurl": "https://www.github.com/o1123pq/code_snippets/blob/main/backend_scrapes_selenium.py",
 			"videoUrl": "",
 			"imgs": ["sc (1).jpg"],
 			"tech": ["python", "numpy", "pandas", "selenium"]
@@ -142,8 +142,8 @@
 		{
 			"title": "[code snippet] Requesting data",
 			"description": "Requesting data for multiple endpoints from the same API source/vendor.",
-			"pageurl": "https://www.github.com/o1123pq/codesnippets/blob/main/backend_requests_vendorapi.py",
-			"sourceurl": "https://www.github.com/o1123pq/codesnippets/blob/main/backend_requests_vendorapi.py",
+			"pageurl": "https://www.github.com/o1123pq/code_snippets/blob/main/backend_requests_vendorapi.py",
+			"sourceurl": "https://www.github.com/o1123pq/code_snippets/blob/main/backend_requests_vendorapi.py",
 			"videoUrl": "",
 			"imgs": ["sc (1).jpg"],
 			"tech": ["python", "numpy", "pandas"]
