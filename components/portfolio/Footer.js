@@ -14,21 +14,21 @@ const Footer = () => {
 				<Divider bg={dividColor} zIndex={0} style={{zIndex: 0}} mb="8vh" />
 				<Grid templateColumns="repeat(12,1fr)" autoRows columnGap={{base: "2vh", md: "2vh"}} mb="4rem" w="100%" m="auto">
 					<GridItem colSpan={{base: 12, md: 4}} mb="4.8rem">
-						<Box textAlign="right" h="6vh" w="100%">
+						<Box m={0} p={0} mb="2.2vh">
 							<Text textAlign={{base: "center", md: "left"}} color="bodyDark2ndAlt">
 								Browse
 							</Text>
 						</Box>
 						<Flex direction={{base: ["column"], md: ["column"]}} w="100%" alignItems={{base: "center", md: "start"}} justifyContent="start">
+							<FooterTopNavButton lbl="Back to top" />
 							<FooterNavButton loc="/" lbl="Works" router={router} />
 							{/* <FooterNavButton loc="/resume" lbl="Resume" router={router} /> */}
 							<FooterNavButton loc="/timeline" lbl="Blog" router={router} />
-							<FooterTopNavButton lbl="Back to top" />
 						</Flex>
 					</GridItem>
 					<GridItem colSpan={{base: 12, md: 8}} mb="4.8rem">
 						<Flex direction={{base: ["column"], md: ["column"]}} w="100%" alignItems={{base: "center", md: "end"}} justifyContent="end" mb="8vh">
-							<Box h="6vh" w="100%">
+							<Box w="100%" m={0} p={0} mb="2.2vh">
 								<Text textAlign={{base: "center", md: "right"}} color="bodyDark2ndAlt">
 									For whatever, freely contact me via below
 								</Text>

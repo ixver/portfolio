@@ -31,7 +31,7 @@ const WorksSection = () => {
 
 	useEffect(() => {});
 
-	const titleChoices = ["detection", "scraping", "nlp", "code snippet", "visualization"];
+	const titleChoices = ["web app", "detection", "scraping", "nlp", "code snippet", "visualization"];
 	const handleFilterReset = () => {
 		setCurrentTag("");
 		setlistdatacurrent(worksData);
@@ -128,6 +128,7 @@ const WorksSection = () => {
 						<Text
 							variant="section-text"
 							color={modeTxtClr}
+							fontSize="2vh"
 							maxW="33vh"
 							mb="6.8vh"
 							lineHeight="3.3vh"
@@ -150,13 +151,13 @@ const WorksSection = () => {
 											as="button"
 											variant="outline"
 											lineHeight="1.1rem"
-											fontSize=".8rem"
+											fontSize="1.4vh"
 											letterSpacing=".08rem"
 											fontWeight="normal"
 											_hover={{backgroundColor: modeTagHoveredBgClr, color: modeTagHoveredClr, borderColor: modeTagHoveredClr}}
 											py=".1rem"
 											px=".4rem"
-											mx=".08rem"
+											mx=".4vh"
 											my=".33rem"
 											color={modeTagClr}
 											borderColor={modeTagClr}
@@ -171,12 +172,12 @@ const WorksSection = () => {
 									<Text
 										variant="outline"
 										lineHeight="1.1rem"
-										fontSize=".8rem"
+										fontSize="1.6vh"
 										letterSpacing=".08rem"
 										fontWeight="normal"
 										py=".1rem"
 										px=".4rem"
-										mx=".08rem"
+										mx=".4vh"
 										my=".33rem"
 										color={modeTagClr}
 										borderColor="rgba(1,1,1,0)"
@@ -194,18 +195,18 @@ const WorksSection = () => {
 												variant="outline"
 												key={i}
 												lineHeight="1.1rem"
-												fontSize=".8rem"
+												fontSize="1.4vh"
 												letterSpacing=".08rem"
 												fontWeight="normal"
 												_hover={{backgroundColor: modeTagHoveredBgClr, color: modeTagHoveredClr, borderColor: modeTagHoveredClr}}
 												py=".1rem"
 												px=".4rem"
-												mx=".08rem"
+												mx=".4vh"
 												my=".33rem"
 												bg={currentTag == v ? modeTagHoveredBgClr : "rgba(0,0,0,0)"}
 												color={currentTag == v ? "white" : modeTagClr}
-												borderColor={modeTagClr}
-												borderWidth=".08rem"
+												borderColor={currentTag == v ? "white" : modeTagClr}
+												borderWidth={currentTag == v ? ".28vh" : ".2vh"}
 												value={v}
 												onClick={(e) => {
 													handleFilterByTitle(e);
@@ -220,12 +221,12 @@ const WorksSection = () => {
 									<Text
 										variant="outline"
 										lineHeight="1.1rem"
-										fontSize=".8rem"
+										fontSize="1.6vh"
 										letterSpacing=".08rem"
 										fontWeight="normal"
 										py=".1rem"
 										px=".4rem"
-										mx=".08rem"
+										mx=".4vh"
 										my=".33rem"
 										color={modeTagClr}
 										borderColor="rgba(1,1,1,0)"
@@ -243,18 +244,18 @@ const WorksSection = () => {
 												variant="outline"
 												key={i}
 												lineHeight="1.1rem"
-												fontSize=".8rem"
+												fontSize="1.4vh"
 												letterSpacing=".08rem"
 												fontWeight="normal"
 												_hover={{backgroundColor: modeTagHoveredBgClr, color: modeTagHoveredClr, borderColor: modeTagHoveredClr}}
 												py=".1rem"
 												px=".4rem"
-												mx=".08rem"
+												mx=".4vh"
 												my=".33rem"
 												bg={currentTag == v ? modeTagHoveredBgClr : "rgba(0,0,0,0)"}
 												color={currentTag == v ? "white" : modeTagClr}
-												borderColor={modeTagClr}
-												borderWidth=".08rem"
+												borderColor={currentTag == v ? "white" : modeTagClr}
+												borderWidth={currentTag == v ? ".28vh" : ".2vh"}
 												value={v}
 												onClick={(e) => {
 													handleFilterByTags(e);
@@ -268,17 +269,17 @@ const WorksSection = () => {
 								<Text
 									ref={workDataTotalRef}
 									variant="outline"
-									mx=".8vh"
+									mx="1vh"
 									alignSelf="center"
-									fontSize="1.6vh"
+									fontSize="1.7vh"
 									letterSpacing=".08rem"
 									fontWeight="normal"
-									color={modeTagClr}
+									color="white"
 									borderColor="rgba(1,1,1,0)"
 									borderWidth=".08rem"
 									onClick={() => handleFilterReset()}
 								>
-									{workDataTotal} ITEMS
+									{workDataTotal} items
 								</Text>
 							</Flex>
 						</motion.div>
@@ -292,9 +293,9 @@ const WorksSection = () => {
 							<Box w="100%" bg={modeBgColor} ref={worksDataRef} listdata={listdatacurrent}>
 								<ItemsList listdata={listdatacurrent} tagFunc={handleFilterByTags} />
 							</Box>
-							<Text mb="2.8rem" textAlign="center" letterSpacing=".2rem" variant="section-text">
+							{/* <Text mb="2.8rem" textAlign="center" letterSpacing=".2rem" variant="section-text">
 								more to come..
-							</Text>
+							</Text> */}
 						</motion.div>
 					</motion.div>
 				</GridItem>

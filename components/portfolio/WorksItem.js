@@ -58,7 +58,7 @@ const WorksItem = ({itemData, tagFunc}) => {
 				direction={{base: ["column"], md: ["column"]}}
 				justifyContent="start"
 				h="auto"
-				mb="6.8rem"
+				mb="4.8vh"
 				bg={modeBgClr}
 				borderWidth=".17vh"
 				borderColor={bdrClr}
@@ -80,20 +80,29 @@ const WorksItem = ({itemData, tagFunc}) => {
 							></iframe>
 						</Box>
 					)}
-					{itemData.imgs.length > 0 &&
-						itemData["imgs"].map((t, i) => {
-							return (
-								<Box key={i} minH="8vh" minW="24vh" wrap="true">
-									<Image
-										maxH="24vh"
-										maxW={{base: "auto", md: "auto"}}
-										src={t}
-										alt={itemData.title}
-										// htmlHeight="auto"
-									/>
-								</Box>
-							);
-						})}
+					{Array.isArray(itemData.imgs) && itemData.imgs.length > 0
+						? itemData["imgs"].map((t, i) => {
+								return (
+									<Box key={i} minH="8vh" minW="24vh" wrap="true">
+										<Image
+											maxH="24vh"
+											maxW={{base: "auto", md: "auto"}}
+											src={t}
+											alt={itemData.title}
+											// htmlHeight="auto"
+										/>
+									</Box>
+								);
+						  })
+						: itemData.imgs.length > 0 && (
+								<Image
+									minH="28vh"
+									maxW={{base: "auto", md: "auto"}}
+									src={itemData.imgs}
+									alt={itemData.title}
+									// htmlHeight="auto"
+								/>
+						  )}
 				</Flex>
 
 				<Box>
@@ -105,7 +114,7 @@ const WorksItem = ({itemData, tagFunc}) => {
 							</Link>
 						</Heading>
 						{/* description */}
-						<Box variant="worksample-item-text" textAlign="center" maxW={{base: "22rem", md: "48vh"}} p={0} mb="1.6vh">
+						<Box variant="worksample-item-text" textAlign="center" maxW={{base: "22rem", md: "48vh"}} p={0} mb="1.6vh" color="gray.400">
 							<Text dangerouslySetInnerHTML={{__html: itemData.description}}></Text>
 						</Box>
 
@@ -141,7 +150,7 @@ const WorksItem = ({itemData, tagFunc}) => {
 								);
 							})}
 						</Flex>
-						<Flex alignItems={{base: "center", md: "baseline"}} direction={{base: ["column"], md: ["row"]}} mb="4.8vh">
+						<Flex alignItems={{base: "center", md: "baseline"}} direction={{base: ["column"], md: ["row"]}} mb="4.8vh" color="gray.400">
 							<Link
 								href={itemData.sourceurl}
 								target="_blank"

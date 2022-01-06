@@ -159,7 +159,7 @@ export const FooterTopNavButton = ({lbl, order}) => {
 	};
 
 	return (
-		<Box order={order} mt="2.8vh" mb={{base: "1rem", md: "0rem"}}>
+		<Box order={order} mb={{base: "1vh", md: "0rem"}}>
 			<Link px={0} pb=".1rem" fontSize="2vh">
 				<Button variant="ghost" p={0} px={0} pb=".1rem" colorScheme={useColorModeValue("light", "dark")} onClick={scrollToSection}>
 					{lbl}
@@ -180,8 +180,8 @@ export const LinkButton = ({loc, lbl, order, router, target, leftIcon, colorSche
 	useEffect(() => {}, [router]);
 
 	return (
-		<Box order={order} mb={{base: "1rem", md: "0rem"}}>
-			<Link _hover="" href={loc} target={target} px={0} pb=".2vh" fontSize="2vh">
+		<Box order={order} mb={{base: "1vh", md: "0rem"}}>
+			<Link _hover="" href={loc} target={target} px={0} fontSize="2vh">
 				<Button variant="ghost" p={0} px={0} pb=".1rem" leftIcon={leftIcon} colorScheme={colorScheme}>
 					{lbl}
 				</Button>
