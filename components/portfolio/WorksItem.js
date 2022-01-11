@@ -48,6 +48,7 @@ const WorksItem = ({itemData, tagFunc}) => {
 	const bdrClr = useColorModeValue("rgb(170, 170, 170,1)", "rgb(88, 88, 88,1)");
 
 	// const modeTagClr = useColorModeValue("gray.400", "gray.600");
+	const modedescriptionClr = useColorModeValue("gray.400", "gray.600");
 	const modeTagHoveredClr = useColorModeValue("white", "black");
 	const modeTagHoveredBgClr = useColorModeValue("blue.600", "blue.200");
 	return (
@@ -114,7 +115,14 @@ const WorksItem = ({itemData, tagFunc}) => {
 							</Link>
 						</Heading>
 						{/* description */}
-						<Box variant="worksample-item-text" textAlign="center" maxW={{base: "22rem", md: "45.6rem"}} p={0} mb="1.11rem" color="gray.400">
+						<Box
+							variant="worksample-item-text"
+							textAlign="center"
+							maxW={{base: "22rem", md: "45.6rem"}}
+							p={0}
+							mb="1.11rem"
+							color={modedescriptionClr}
+						>
 							<Text dangerouslySetInnerHTML={{__html: itemData.description}}></Text>
 						</Box>
 
@@ -156,20 +164,24 @@ const WorksItem = ({itemData, tagFunc}) => {
 								);
 							})}
 						</Flex>
-						<Flex alignItems={{base: "center", md: "baseline"}} direction={{base: ["column"], md: ["row"]}} mb="3.36rem" color="gray.400">
-							<Link
-								href={itemData.sourceurl}
-								target="_blank"
-								variant="outline"
-								lineHeight="1.1rem"
-								fontSize=".88rem"
-								letterSpacing=".16rem"
-								py=".1rem"
-								px=".28rem"
-								mx=".2rem"
-							>
-								<Center>source</Center>
-							</Link>
+
+						{/* source */}
+						<Flex alignItems={{base: "center", md: "baseline"}} direction={{base: ["column"], md: ["row"]}} mb="3.36rem" color={modedescriptionClr}>
+							{itemData.sourceurl && (
+								<Link
+									href={itemData.sourceurl}
+									target="_blank"
+									variant="outline"
+									lineHeight="1.1rem"
+									fontSize=".88rem"
+									letterSpacing=".16rem"
+									py=".1rem"
+									px=".28rem"
+									mx=".2rem"
+								>
+									<Center>source</Center>
+								</Link>
+							)}
 						</Flex>
 						{/* dev */}
 						<Flex direction={["row"]} maxW="28rem" justifyContent={{base: "center", md: "end"}} flexWrap="wrap"></Flex>

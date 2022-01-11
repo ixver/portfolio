@@ -114,6 +114,7 @@ const WorksSection = () => {
 	const modeTagChosenClr = useColorModeValue("white", "black");
 	const modeTagHoveredClr = useColorModeValue("white", "black");
 	const modeTagHoveredBgClr = useColorModeValue("blue.600", "blue.200");
+	const modeItemsTotalLblClr = useColorModeValue("white", "black");
 	return (
 		<Flex direction={["column"]} textAlign={{base: "center", md: "left"}} pb="8rem">
 			<Grid templateColumns="repeat(12,1fr)" autoRows columnGap={{base: "1.4rem", md: "1.4rem"}}>
@@ -207,7 +208,7 @@ const WorksSection = () => {
 												bg={currentTag == v ? modeTagHoveredBgClr : "rgba(0,0,0,0)"}
 												color={currentTag == v ? modeTagChosenClr : modeTagClr}
 												borderColor={currentTag == v ? modeTagChosenClr : modeTagClr}
-												borderWidth={currentTag == v ? ".2rem" : ".14rem"}
+												borderWidth={currentTag == v ? ".2rem" : ".08rem"}
 												value={v}
 												onClick={(e) => {
 													handleFilterByTitle(e);
@@ -256,7 +257,7 @@ const WorksSection = () => {
 												bg={currentTag == v ? modeTagHoveredBgClr : "rgba(0,0,0,0)"}
 												color={currentTag == v ? modeTagChosenClr : modeTagClr}
 												borderColor={currentTag == v ? modeTagChosenClr : modeTagClr}
-												borderWidth={currentTag == v ? ".2rem" : ".14rem"}
+												borderWidth={currentTag == v ? ".2rem" : ".08rem"}
 												value={v}
 												onClick={(e) => {
 													handleFilterByTags(e);
@@ -275,7 +276,7 @@ const WorksSection = () => {
 									fontSize="1.2rem"
 									letterSpacing=".08rem"
 									fontWeight="normal"
-									color="white"
+									color={modeItemsTotalLblClr}
 									borderColor="rgba(1,1,1,0)"
 									borderWidth=".08rem"
 									onClick={() => handleFilterReset()}
