@@ -81,12 +81,12 @@ const WorksItem = ({itemData, tagFunc}) => {
 							></iframe>
 						</Box>
 					)}
-					{Array.isArray(itemData.imgs) && itemData.imgs.length > 0
+					{Array.isArray(itemData.imgs) && itemData.imgs.length > 1
 						? itemData["imgs"].map((t, i) => {
 								return (
-									<Box key={i} minH="5.6rem" minW="22.8rem" wrap="true">
+									<Box key={i} minH="4rem" minW="22.8rem" wrap="true">
 										<Image
-											maxH="16rem"
+											maxH="14rem"
 											maxW={{base: "auto", md: "auto"}}
 											src={t}
 											alt={itemData.title}
@@ -95,9 +95,10 @@ const WorksItem = ({itemData, tagFunc}) => {
 									</Box>
 								);
 						  })
-						: itemData.imgs.length > 0 && (
+						: itemData.imgs.length == 1 && (
 								<Image
-									minH="4rem"
+									minH="8rem"
+									maxH="16rem"
 									maxW={{base: "auto", md: "auto"}}
 									src={itemData.imgs}
 									alt={itemData.title}

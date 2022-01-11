@@ -45,7 +45,7 @@
 			"pageurl": "https://tfwebapp-nehmhudbya-pd.a.run.app/",
 			"sourceurl": "https://github.com/o1123pq/tfwebapp",
 			"videoUrl": "",
-			"imgs": "webcamdetections.png",
+			"imgs": ["webcamdetections.png"],
 			"tech": ["reactjs", "mediapipe", "firebase", "canvas", "tensorflow", "docker", "googlecloudrun"]
 		},
 		{
@@ -100,7 +100,7 @@
 			"pageurl": "https://scrv1-swds45lcrq-nn.a.run.app/",
 			"sourceurl": "https://github.com/o1123pq/scraper",
 			"videoUrl": "",
-			"imgs": "scraper.png",
+			"imgs": ["scraper.png"],
 			"tech": ["nodejs", "reactjs", "nextjs", "firebase", "puppeteer", "docker", "googlecloudrun"]
 		},
 		{
