@@ -107,7 +107,7 @@ const Item = ({itemData, openMedia}) => {
 						{itemData.vidUrl ? (
 							<iframe
 								width="100%"
-								height="182rem"
+								height="260rem"
 								src={itemData.vidUrl.includes("/watch?v=") ? itemData.vidUrl.replace(".com/watch?v=", "-nocookie.com/embed/") : itemData.vidUrl}
 								frameBorder="0"
 								allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture;nocookie"
