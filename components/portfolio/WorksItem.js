@@ -86,7 +86,7 @@ const WorksItem = ({itemData, tagFunc}) => {
 								return (
 									<Box key={i} minH="5.6rem" minW="22.8rem" wrap="true">
 										<Image
-											maxH="22.8rem"
+											maxH="16rem"
 											maxW={{base: "auto", md: "auto"}}
 											src={t}
 											alt={itemData.title}
@@ -97,7 +97,7 @@ const WorksItem = ({itemData, tagFunc}) => {
 						  })
 						: itemData.imgs.length > 0 && (
 								<Image
-									minH="25.6rem"
+									minH="4rem"
 									maxW={{base: "auto", md: "auto"}}
 									src={itemData.imgs}
 									alt={itemData.title}
