@@ -49,19 +49,19 @@ const TimelinePage = () => {
 		<Box pt="6rem">
 			<Container maxW="container.xl">
 				<Flex direction={["column"]} textAlign={{base: "center", md: "left"}} pb="8rem">
-					<Grid templateColumns="repeat(12,1fr)" autoRows columnGap={{sm: "2vh", md: "2vh"}}>
+					<Grid templateColumns="repeat(12,1fr)" autoRows columnGap={{sm: "1.4rem", md: "1.4rem"}}>
 						{/* SUBDIVISION 1 */}
-						<GridItem colSpan={{base: 12, lg: 4}} mb="6.8vh" pr={{lg: "4rem"}}>
+						<GridItem colSpan={{base: 12, lg: 4}} mb="4.76rem" pr={{lg: "4rem"}}>
 							<Flex direction={["column"]} alignItems={{base: "center", md: "start"}}>
-								<Heading variant="section-title" fontSize="3.3rem" mb="4.8vh">
+								<Heading variant="section-title" fontSize="3.3rem" mb="3.36rem">
 									{headtext}
 								</Heading>
 								<Text
 									variant="section-text"
 									color={modeTxtClr}
-									maxW="33vh"
-									mb="6.8vh"
-									lineHeight="3.3vh"
+									maxW="23.1rem"
+									mb="4.76rem"
+									lineHeight="2.31rem"
 									textAlign={{base: "center", lg: "left"}}
 									dangerouslySetInnerHTML={{__html: bodytext}}
 								></Text>
@@ -72,7 +72,7 @@ const TimelinePage = () => {
 							<motion.div variants={outerAnimContainer}>
 								<motion.div variants={itemAnim}>
 									<Flex direction={["column"]} mb="2rem">
-										<Box flexBasis={1} borderWidth=".17vh" p=".8vh" borderColor={bdrClr}>
+										<Box flexBasis={1} borderWidth=".11rem" p=".56rem" borderColor={bdrClr}>
 											<Img src={resumeLoc} minH="100%" minW="100%" alt="resume" zIndex={2} />
 										</Box>
 									</Flex>

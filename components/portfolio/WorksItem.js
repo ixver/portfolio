@@ -58,14 +58,14 @@ const WorksItem = ({itemData, tagFunc}) => {
 				direction={{base: ["column"], md: ["column"]}}
 				justifyContent="start"
 				h="auto"
-				mb="4.8vh"
+				mb="3.36rem"
 				bg={modeBgClr}
-				borderWidth=".17vh"
+				borderWidth=".12rem"
 				borderColor={bdrClr}
 			>
-				<Flex justify="center" alignItems="center" p=".8vh" m={0} mb="4vh" flexWrap="wrap">
+				<Flex justify="center" alignItems="center" p=".56rem" m={0} mb="2.8rem" flexWrap="wrap">
 					{itemData.videoUrl && (
-						<Box width="100%" h="48vh">
+						<Box width="100%" h="26rem">
 							<iframe
 								width="100%"
 								height="100%"
@@ -83,9 +83,9 @@ const WorksItem = ({itemData, tagFunc}) => {
 					{Array.isArray(itemData.imgs) && itemData.imgs.length > 0
 						? itemData["imgs"].map((t, i) => {
 								return (
-									<Box key={i} minH="8vh" minW="24vh" wrap="true">
+									<Box key={i} minH="5.6rem" minW="22.8rem" wrap="true">
 										<Image
-											maxH="24vh"
+											maxH="22.8rem"
 											maxW={{base: "auto", md: "auto"}}
 											src={t}
 											alt={itemData.title}
@@ -96,7 +96,7 @@ const WorksItem = ({itemData, tagFunc}) => {
 						  })
 						: itemData.imgs.length > 0 && (
 								<Image
-									minH="28vh"
+									minH="25.6rem"
 									maxW={{base: "auto", md: "auto"}}
 									src={itemData.imgs}
 									alt={itemData.title}
@@ -106,20 +106,26 @@ const WorksItem = ({itemData, tagFunc}) => {
 				</Flex>
 
 				<Box>
-					<Flex direction={{base: ["column"], md: ["column"]}} justifyContent="start" alignItems="center" mb="4.8vh">
+					<Flex direction={{base: ["column"], md: ["column"]}} justifyContent="start" alignItems="center" mb="3.36rem">
 						{/* title */}
-						<Heading variant="worksample-title" fontSize="3.3vh" mb="4.8vh" textAlign="center" mx="8vh">
+						<Heading variant="worksample-title" fontSize="2.31rem" mb="3.36rem" textAlign="center" mx="5.6rem">
 							<Link href={itemData.pageurl} target="_blank">
 								{itemData.title}
 							</Link>
 						</Heading>
 						{/* description */}
-						<Box variant="worksample-item-text" textAlign="center" maxW={{base: "22rem", md: "48vh"}} p={0} mb="1.6vh" color="gray.400">
+						<Box variant="worksample-item-text" textAlign="center" maxW={{base: "22rem", md: "45.6rem"}} p={0} mb="1.11rem" color="gray.400">
 							<Text dangerouslySetInnerHTML={{__html: itemData.description}}></Text>
 						</Box>
 
 						{/* tags */}
-						<Flex direction={["row"]} maxW={{base: "22rem", md: "48vh"}} justifyContent={{base: "center", md: "center"}} flexWrap="wrap" mb=".8vh">
+						<Flex
+							direction={["row"]}
+							maxW={{base: "22rem", md: "45.6rem"}}
+							justifyContent={{base: "center", md: "center"}}
+							flexWrap="wrap"
+							mb=".56rem"
+						>
 							{itemData["tech"].map((t, i) => {
 								return (
 									<motion.div layout layoutId="tags" key={i} variants={tagAnim}>
@@ -150,7 +156,7 @@ const WorksItem = ({itemData, tagFunc}) => {
 								);
 							})}
 						</Flex>
-						<Flex alignItems={{base: "center", md: "baseline"}} direction={{base: ["column"], md: ["row"]}} mb="4.8vh" color="gray.400">
+						<Flex alignItems={{base: "center", md: "baseline"}} direction={{base: ["column"], md: ["row"]}} mb="3.36rem" color="gray.400">
 							<Link
 								href={itemData.sourceurl}
 								target="_blank"

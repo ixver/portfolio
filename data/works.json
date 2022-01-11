@@ -40,7 +40,7 @@
 			"tech": ["python", "opencv", "tensorflow", "mediapipe"]
 		},
 		{
-			"title": "Machine Learning Detection for Webcam",
+			"title": "Machine Learning Detection for Webcam [Web App]",
 			"description": "Face, hand, finger detection Tensorflow-MediaPipe models were implemented with image and canvas manipulations.",
 			"pageurl": "https://tfwebapp-nehmhudbya-pd.a.run.app/",
 			"sourceurl": "https://github.com/o1123pq/tfwebapp",

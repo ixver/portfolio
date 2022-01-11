@@ -30,9 +30,9 @@ import {scroller} from "react-scroll";
 
 export const HomeButton = ({loc, lbl}) => {
 	return (
-		<Box mb={{base: ".2vh", md: "0rem"}}>
+		<Box mb={{base: ".01rem", md: "0rem"}}>
 			<NextLink href={loc}>
-				<Link fontSize="2vh" fontFamily="montserrat" variant="showcase-nav" px={0} mx="1rem" zIndex={99}>
+				<Link fontSize="1.4rem" fontFamily="montserrat" variant="showcase-nav" px={0} mx="1rem" zIndex={99}>
 					<AnimatedWord text={lbl} />
 				</Link>
 			</NextLink>
@@ -53,7 +53,7 @@ export const NavButton = ({loc, lbl, order, router}) => {
 	return (
 		<Box order={order} mb={{base: "1rem", md: "0rem"}}>
 			<NextLink href={loc}>
-				<Link variant="showcase-nav" px={0} mx="1rem" pb=".1rem" fontSize="2vh" colorScheme={useColorModeValue("light", "dark")}>
+				<Link variant="showcase-nav" px={0} mx="1rem" pb=".1rem" fontSize="1.4rem" colorScheme={useColorModeValue("light", "dark")}>
 					{lbl}
 				</Link>
 			</NextLink>
@@ -72,7 +72,15 @@ export const NavContactButton = ({lbl, order}) => {
 
 	return (
 		<Box order={order} mb={{base: "1rem", md: "0rem"}}>
-			<Link variant="showcase-nav" px={0} mx="1rem" pb=".1rem" fontSize="2vh" colorScheme={useColorModeValue("light", "dark")} onClick={scrollToSection}>
+			<Link
+				variant="showcase-nav"
+				px={0}
+				mx="1rem"
+				pb=".1rem"
+				fontSize="1.4rem"
+				colorScheme={useColorModeValue("light", "dark")}
+				onClick={scrollToSection}
+			>
 				{lbl}
 			</Link>
 		</Box>
@@ -139,7 +147,7 @@ export const FooterNavButton = ({loc, lbl, order, router}) => {
 	return (
 		<Box order={order} mb={{base: "1rem", md: "0rem"}}>
 			<NextLink href={loc}>
-				<Link px={0} pb=".1rem" fontSize="2vh">
+				<Link px={0} pb=".1rem" fontSize="1.4rem">
 					<Button variant="ghost" p={0} px={0} pb=".1rem" colorScheme={useColorModeValue("light", "dark")}>
 						{lbl}
 					</Button>
@@ -159,8 +167,8 @@ export const FooterTopNavButton = ({lbl, order}) => {
 	};
 
 	return (
-		<Box order={order} mb={{base: "1vh", md: "0rem"}}>
-			<Link px={0} pb=".1rem" fontSize="2vh">
+		<Box order={order} mb={{base: ".7rem", md: "0rem"}}>
+			<Link px={0} pb=".1rem" fontSize="1.4rem">
 				<Button variant="ghost" p={0} px={0} pb=".1rem" colorScheme={useColorModeValue("light", "dark")} onClick={scrollToSection}>
 					{lbl}
 				</Button>
@@ -180,8 +188,8 @@ export const LinkButton = ({loc, lbl, order, router, target, leftIcon, colorSche
 	useEffect(() => {}, [router]);
 
 	return (
-		<Box order={order} mb={{base: "1vh", md: "0rem"}}>
-			<Link _hover="" href={loc} target={target} px={0} fontSize="2vh">
+		<Box order={order} mb={{base: ".7rem", md: "0rem"}}>
+			<Link _hover="" href={loc} target={target} px={0} fontSize="1.4rem">
 				<Button variant="ghost" p={0} px={0} pb=".1rem" leftIcon={leftIcon} colorScheme={colorScheme}>
 					{lbl}
 				</Button>

@@ -89,7 +89,7 @@ const theme = extendTheme({
 				"worksample-title": {
 					fontSize: "2xl",
 					fontFamily: "subtitleFont",
-					letterSpacing: ".06vh",
+					letterSpacing: ".04rem",
 					marginBottom: ".68rem",
 				},
 			},
@@ -125,11 +125,11 @@ const theme = extendTheme({
 					bg: "black",
 				},
 				"section-text": {
-					fontSize: "1.7vh",
+					fontSize: "1.2rem",
 					lineHeight: "2rem",
 				},
 				"worksample-item-text": {
-					fontSize: "1.1vh",
+					fontSize: ".8rem",
 					fontFamily: "textsFont",
 					lineHeight: "1.6rem",
 					letterSpacing: ".08rem",

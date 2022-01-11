@@ -15,11 +15,11 @@ const Header = ({router}) => {
 		<Box p={0} id="Header">
 			<Container maxW="container.xl">
 				<motion.div
-					initial={{opacity: 0, y: "-28vh"}}
+					initial={{opacity: 0, y: "-25.6rem"}}
 					animate={{opacity: 1, y: "0vh"}}
 					transition={{delay: 0.48, duration: 0.48, type: "spring", ease: "easeIn", when: "beforeChildren"}}
 				>
-					<Flex direction={{base: ["column"], md: ["row"]}} alignItems="center" alignContent="center" pt="2vh" pb="2.8vh">
+					<Flex direction={{base: ["column"], md: ["row"]}} alignItems="center" alignContent="center" pt="1.4rem" pb="1.96rem">
 						<HomeButton loc="/" lbl="JUNG&nbsp;LIM" />
 						<Spacer p={0} m={0} />
 
@@ -33,7 +33,7 @@ const Header = ({router}) => {
 					</Flex>
 				</motion.div>
 				<motion.div
-					initial={{x: "-88vh"}}
+					initial={{x: "-85.6rem"}}
 					animate={{x: "0vh"}}
 					transition={{duration: 0.68, type: "spring", ease: "easeIn", when: "beforeChildren"}}
 					zIndex={0}
@@ -46,7 +46,7 @@ const Header = ({router}) => {
 						style={{zIndex: 0}}
 						bgGradient={modeDividerGradientClr}
 						// bgClip="text"
-						h=".08vh"
+						h=".056rem"
 						overflow="hidden"
 					>
 						.

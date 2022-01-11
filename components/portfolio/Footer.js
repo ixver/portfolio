@@ -11,10 +11,10 @@ const Footer = () => {
 	return (
 		<Box pt="2.8rem" variant="" id="Footer">
 			<Container maxW="container.xl" centerContent>
-				<Divider bg={dividColor} zIndex={0} style={{zIndex: 0}} mb="8vh" />
-				<Grid templateColumns="repeat(12,1fr)" autoRows columnGap={{base: "2vh", md: "2vh"}} mb="4rem" w="100%" m="auto">
+				<Divider bg={dividColor} zIndex={0} style={{zIndex: 0}} mb="5.6rem" />
+				<Grid templateColumns="repeat(12,1fr)" autoRows columnGap={{base: "1.4rem", md: "1.4rem"}} mb="4rem" w="100%" m="auto">
 					<GridItem colSpan={{base: 12, md: 4}} mb="4.8rem">
-						<Box m={0} p={0} mb="2.2vh">
+						<Box m={0} p={0} mb="1.11rem">
 							<Text textAlign={{base: "center", md: "left"}} color="bodyDark2ndAlt">
 								Browse
 							</Text>
@@ -27,8 +27,8 @@ const Footer = () => {
 						</Flex>
 					</GridItem>
 					<GridItem colSpan={{base: 12, md: 8}} mb="4.8rem">
-						<Flex direction={{base: ["column"], md: ["column"]}} w="100%" alignItems={{base: "center", md: "end"}} justifyContent="end" mb="8vh">
-							<Box w="100%" m={0} p={0} mb="2.2vh">
+						<Flex direction={{base: ["column"], md: ["column"]}} w="100%" alignItems={{base: "center", md: "end"}} justifyContent="end" mb="5.6rem">
+							<Box w="100%" m={0} p={0} mb="1.11rem">
 								<Text textAlign={{base: "center", md: "right"}} color="bodyDark2ndAlt">
 									For whatever, freely contact me via below
 								</Text>
@@ -38,24 +38,24 @@ const Footer = () => {
 								target="_blank"
 								lbl="Github"
 								colorScheme={colorScheme}
-								leftIcon={<Icon fontSize="2.2vh" as={GithubIcon} />}
+								leftIcon={<Icon fontSize="1.6rem" as={GithubIcon} />}
 							/>
 							<LinkButton
 								loc="https://www.linkedin.com/in/jlim01"
 								target="_blank"
 								lbl="LinkedIn"
-								leftIcon={<Icon fontSize="2.2vh" as={LinkedinIcon} />}
+								leftIcon={<Icon fontSize="1.6rem" as={LinkedinIcon} />}
 								colorScheme={colorScheme}
 							/>
 							<LinkButton
 								loc="mailto:o1123pq@gmail.com"
 								target="_blank"
 								lbl="email"
-								leftIcon={<Icon fontSize="2.2vh" as={MailIcon} />}
+								leftIcon={<Icon fontSize="1.6rem" as={MailIcon} />}
 								colorScheme={colorScheme}
 							/>
 						</Flex>
-						<Text color="bodyDark2ndAlt" fontSize="1.6vh" mb="6.8rem" textAlign={{base: "center", md: "right"}}>
+						<Text color="bodyDark2ndAlt" fontSize="1.11rem" mb="6.8rem" textAlign={{base: "center", md: "right"}}>
 							Copyright &copy; 2021
 						</Text>
 					</GridItem>

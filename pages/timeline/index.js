@@ -74,23 +74,23 @@ const TimelinePage = () => {
 		<Box pt="6rem">
 			<Container maxW="container.xl">
 				<Flex direction={["column"]} textAlign={{base: "center", lg: "left"}} pb="8rem">
-					<Grid templateColumns="repeat(12,1fr)" autoRows columnGap={{sm: "2vh", md: "2vh"}}>
+					<Grid templateColumns="repeat(12,1fr)" autoRows columnGap={{sm: "1.4rem", md: "1.4rem"}}>
 						{/* SUBDIVISION 1 */}
-						<GridItem colSpan={{base: 12, md: 4}} mb="6.8vh" pr={{lg: "4rem"}}>
+						<GridItem colSpan={{base: 12, md: 4}} mb="4.75rem" pr={{lg: "4rem"}}>
 							<Flex direction={["column"]} alignItems={{base: "center", lg: "start"}}>
-								<Heading variant="section-title" fontSize="3.3rem" mb="6vh">
+								<Heading variant="section-title" fontSize="3.3rem" mb="4.2rem">
 									{headtext}
 								</Heading>
 								<Text
 									// color={modeTxtClr}
 									bgGradient={modeTxtGradientClr}
 									bgClip="text"
-									fontSize="2vh"
+									fontSize="1.4rem"
 									fontWeight="bold"
 									variant="section-text"
-									maxW="33vh"
-									mb="6.8vh"
-									lineHeight="4.8vh"
+									maxW="23.1rem"
+									mb="4.75rem"
+									lineHeight="3.36rem"
 									textAlign={{base: "center", lg: "left"}}
 									dangerouslySetInnerHTML={{__html: bodytext}}
 								></Text>
@@ -122,7 +122,7 @@ const TimelinePage = () => {
 				<Modal onClose={() => closeMedia()} isOpen={isOpen} isCentered>
 					<ModalOverlay />
 					<ModalContent>
-						<ModalCloseButton color="black" bg="white" borderColor="black" borderWidth=".28vh" rounded="0" />
+						<ModalCloseButton color="black" bg="white" borderColor="black" borderWidth=".2rem" rounded="0" />
 						<ModalBody>
 							{modalData.vidUrl ? (
 								<iframe
