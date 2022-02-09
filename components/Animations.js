@@ -25,9 +25,9 @@ export const AnimatedWord = ({text}) => {
 			// x: randomIntFromInterval(-xdistancerange, xdistancerange), // * (Math.round(Math.random()) * 2 - 1),
 			// y: randomIntFromInterval(-ydistancerange, ydistancerange), // * (Math.round(Math.random()) * 2 - 1),
 			rotate: Math.floor(Math.random() * rotationrange) * (Math.round(Math.random()) * 2 - 1),
-			color: `rgba(${Math.floor(Math.random() * 255)},${Math.floor(Math.random() * 255)},${Math.floor(Math.random() * 255)},1)`,
+			color: `rgba(${Math.floor(Math.random() * 240 + 15)},${Math.floor(Math.random() * 240 + 15)},${Math.floor(Math.random() * 240 + 15)},1)`,
 			// scale: Math.random() * 2.8,
-			opacity: Math.random() * 1,
+			opacity: Math.random() * 0.8 + 0.2,
 		}),
 		animate: {
 			// x: 0,
