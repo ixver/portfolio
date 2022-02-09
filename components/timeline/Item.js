@@ -69,8 +69,8 @@ const ItemPerPersonal = ({itemData, modeBgColor, openMedia}) => {
 	return (
 		itemData.markType == "personal" && (
 			<Flex direction={{base: ["column"], lg: ["row"]}} bg={modeBgColor} mb="4.76rem" h="100%" w="100%">
-				<ItemMedia {...{itemData, orderOnLg: 1}} />
-				<ItemArticle {...{itemData, orderOnLg: 2, colorA: personalTextColorA, colorB: personalTextColorB}} />
+				<ItemMedia {...{itemData, openMedia, orderOnLg: 1}} />
+				<ItemArticle {...{itemData, openMedia, orderOnLg: 2, colorA: personalTextColorA, colorB: personalTextColorB}} />
 			</Flex>
 		)
 	);
@@ -82,32 +82,8 @@ const ItemPerProject = ({itemData, modeBgColor, openMedia}) => {
 	return (
 		itemData.markType == "project" && (
 			<Flex direction={{base: ["column"], lg: ["row"]}} bg={modeBgColor} mb="4.76rem" h="100%" w="100%">
-				<ItemArticle {...{itemData, orderOnLg: 1, colorA: projectTextColorA, colorB: projectTextColorB}} />
-				<ItemMedia {...{itemData, orderOnLg: 2}} />
-				{/* MEDIA */}
-				{/* <Box
-					direction={["column"]}
-					order={{base: 1, lg: 2}}
-					w={{base: "100%", lg: "50%"}}
-					m={0}
-					p=".56rem"
-					justifyContent="center"
-					onClick={() => openMedia(itemData)}
-					style={{overflow: "hidden"}}
-				>
-					{itemData.vidUrl ? (
-						<iframe
-							width="100%"
-							height="260rem"
-							src={itemData.vidUrl.includes("/watch?v=") ? itemData.vidUrl.replace(".com/watch?v=", "-nocookie.com/embed/") : itemData.vidUrl}
-							frameBorder="0"
-							allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture;nocookie"
-							allowFullScreen
-						></iframe>
-					) : (
-						<Image objectFit="cover" src={itemData.imgUrl} h="18.2rem" minW="100%" alt="uploaded pic" zIndex={2} />
-					)}
-				</Box> */}
+				<ItemArticle {...{itemData, openMedia, orderOnLg: 1, colorA: projectTextColorA, colorB: projectTextColorB}} />
+				<ItemMedia {...{itemData, openMedia, orderOnLg: 2}} />
 			</Flex>
 		)
 	);
