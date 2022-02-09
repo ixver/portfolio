@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import {Flex, Box, Heading, Text, Image, useColorModeValue} from "@chakra-ui/react";
 import {motion, LayoutGroup} from "framer-motion";
 
-const ItemMedia = ({itemData, orderOnLg}) => {
+const ItemMedia = ({itemData, openMedia, orderOnLg}) => {
 	{
 		/* MEDIA */
 	}
@@ -70,7 +70,7 @@ const ItemPerPersonal = ({itemData, modeBgColor, openMedia}) => {
 		itemData.markType == "personal" && (
 			<Flex direction={{base: ["column"], lg: ["row"]}} bg={modeBgColor} mb="4.76rem" h="100%" w="100%">
 				<ItemMedia {...{itemData, openMedia, orderOnLg: 1}} />
-				<ItemArticle {...{itemData, openMedia, orderOnLg: 2, colorA: personalTextColorA, colorB: personalTextColorB}} />
+				<ItemArticle {...{itemData, orderOnLg: 2, colorA: personalTextColorA, colorB: personalTextColorB}} />
 			</Flex>
 		)
 	);
@@ -82,7 +82,7 @@ const ItemPerProject = ({itemData, modeBgColor, openMedia}) => {
 	return (
 		itemData.markType == "project" && (
 			<Flex direction={{base: ["column"], lg: ["row"]}} bg={modeBgColor} mb="4.76rem" h="100%" w="100%">
-				<ItemArticle {...{itemData, openMedia, orderOnLg: 1, colorA: projectTextColorA, colorB: projectTextColorB}} />
+				<ItemArticle {...{itemData, orderOnLg: 1, colorA: projectTextColorA, colorB: projectTextColorB}} />
 				<ItemMedia {...{itemData, openMedia, orderOnLg: 2}} />
 			</Flex>
 		)
