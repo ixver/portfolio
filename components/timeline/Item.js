@@ -19,7 +19,7 @@ const ItemPerYear = ({itemData}) => {
 	);
 };
 
-const ItemPerPersonal = ({itemData, modeBgColor}) => {
+const ItemPerPersonal = ({itemData, modeBgColor, openMedia}) => {
 	const personalTextColorA = useColorModeValue("white", "black");
 	const personalTextColorB = useColorModeValue("white", "black");
 	return (
@@ -63,7 +63,7 @@ const ItemPerPersonal = ({itemData, modeBgColor}) => {
 	);
 };
 
-const ItemPerProject = ({itemData, modeBgColor}) => {
+const ItemPerProject = ({itemData, modeBgColor, openMedia}) => {
 	const projectTextColorA = useColorModeValue("white", "black");
 	const projectTextColorB = useColorModeValue("white", "black");
 	return (
@@ -131,9 +131,9 @@ const Item = ({itemData, openMedia}) => {
 
 	return (
 		<motion.div variants={itemAnim}>
-			<ItemPerYear {...{itemData, modeBgColor}} />
-			<ItemPerPersonal {...{itemData, modeBgColor}} />
-			<ItemPerProject {...{itemData, modeBgColor}} />
+			<ItemPerYear {...{itemData, modeBgColor, openMedia}} />
+			<ItemPerPersonal {...{itemData, modeBgColor, openMedia}} />
+			<ItemPerProject {...{itemData, modeBgColor, openMedia}} />
 		</motion.div>
 	);
 };
