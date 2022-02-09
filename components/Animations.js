@@ -5,7 +5,7 @@ import {Text} from "@chakra-ui/react";
 export const AnimatedWord = ({text}) => {
 	// const xdistancerange = 2;
 	// const ydistancerange = 2;
-	const rotationrange = 720;
+	const rotationrange = 28;
 	function randomIntFromInterval(min, max) {
 		// min and max included
 		return Math.floor(Math.random() * (max - min + 1) + min);
